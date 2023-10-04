@@ -20,7 +20,7 @@ main{
    padding: 15px;
   /*    background-image: linear-gradient(180deg,rgb(249, 247, 247) , lightgray); */
 }
-h1, h3{
+h1, h2, h3{
    color: rgb(100, 100, 100);
    text-align: center;
 } 
