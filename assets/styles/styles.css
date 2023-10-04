@@ -11,6 +11,7 @@
 
 html, body, #container {
    height: 98%;
+   width: 99%;
 }
 
 #container{
@@ -32,6 +33,7 @@ footer{
    background-color: rgb(23, 84, 103);
    width: 100%;
    margin: 0px 0px 15px 5px;
+   padding: 10px;
    color: white;
    height: 45px;
    border-radius: 5px;
@@ -114,11 +116,22 @@ h1{
    float: left;
    margin-right: 15px;
    margin-bottom: 15px;
-   width: 130px;
+   width: 90px;
    height: auto;
    border-radius: 5px;
-  
-   
+
+ 
+}
+
+.detail-cards>h3 {
+   font-size: 1.2rem;
+   text-align: left;
+   margin-bottom: 5px;
+   background:rgb(230, 230, 230);
+}
+
+.detail-cards>p {
+   background:rgb(230, 230, 230);
 }
 
 /*                                                          details.html    */

@@ -27,7 +27,7 @@ function makeDetail(detailImg, detailname, detaildescription, detaildate, detail
  
     let detail =  `
       <div class="detail-cards">
-         <h2>${detailname}</h2>
+         <h3>${detailname}</h3>
          <img class="img-detail-card" src="${detailImg}" alt="book" >
          <p>${detaildescription}</p>
          <p>${detailautor}</p>
