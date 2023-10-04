@@ -26,17 +26,15 @@ function searchBook(id)
 function makeDetail(detailImg, detailname, detaildescription, detaildate, detailcategory, detailautor, detaileditor, detailprice, idContainer) {
  
     let detail =  `
-    <div class="detail-cards">
-    <img class="img-detail-card" src="${detailImg}" alt="book" >
-    </div>
-    <div>
-     <h2>${detailname}</h2>
-      <p>${detailautor}</p>
-      <p>${detaildescription}</p>
-      <p>${detaileditor}</p>
-      <p>Precio u$s ${detailprice}.-</p>
-      <button id="goBack-button" onclick="goBack()"> regresar</button>
-     </div>
+      <div class="detail-cards">
+         <h2>${detailname}</h2>
+         <img class="img-detail-card" src="${detailImg}" alt="book" >
+         <p>${detaildescription}</p>
+         <p>${detailautor}</p>
+         <p>${detaileditor}</p>
+         <p>Precio u$s ${detailprice}.-</p>
+         <button id="goBack-button" onclick="goBack()"> regresar</button>
+      </div>   
     `;
     
     document.getElementById(idContainer).innerHTML += detail;

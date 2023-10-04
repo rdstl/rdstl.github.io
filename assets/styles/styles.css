@@ -23,7 +23,7 @@ main{
    padding: 15px;
 }
 
-h1, h2, h3{
+h1, h3{
    color: rgb(100, 100, 100);
    text-align: center;
 } 
@@ -88,7 +88,7 @@ h1{
 .cards, .detail-cards{
  
    border: 3px rgb(243, 242, 242) solid;
-   background-color: rgb(243, 242, 242);
+   background: rgb(230, 230, 230);
    margin: 25px 25px 55px 25px;
    padding: 15px;
    border-radius: 3px;
@@ -96,7 +96,8 @@ h1{
 }
 
 
-/*novela */
+
+
 .cards:hover{
   /*  background-color:rgb(242, 104, 30); */
    border: 3px rgb(242, 104, 30) solid;
@@ -110,10 +111,14 @@ h1{
 }
 
 .img-detail-card{
+   float: left;
+   margin-right: 15px;
+   margin-bottom: 15px;
+   width: 130px;
+   height: auto;
    border-radius: 5px;
-   width: 150px;
-   height: auto
-
+  
+   
 }
 
 /*                                                          details.html    */
