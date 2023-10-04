@@ -1,0 +1,146 @@
+*{
+   background-color: white;
+   font-family:  'Arial Narrow', Arial ,sans-serif;
+   /* box-sizing: border-box; */
+   
+}
+
+html, body, #container {
+ 
+   height: 100%;
+}
+#container{
+ 
+   display: flex;
+   flex-direction: column;
+
+}
+main{
+   flex-grow: 1;
+   padding: 15px;
+  /*    background-image: linear-gradient(180deg,rgb(249, 247, 247) , lightgray); */
+}
+h1, h3{
+   color: rgb(100, 100, 100);
+   text-align: center;
+} 
+
+footer{
+   background-color: rgb(23, 84, 103);
+   margin: 0px 5px 15px 5px;
+   color: white;
+   height: 45px;
+   border-radius: 5px;
+}
+footer p{
+   background-color: rgb(23, 84, 103);
+   color: white;
+   padding-left: 5px;
+}
+#topa{
+   background-color: rgb(23, 84, 103);
+   height: 7px;
+}
+
+/*                                               Barra de Navegación   */
+#nav{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   border-bottom: 1px solid rgb(147, 147, 147);
+   padding: 10px;
+}
+
+.nav-item{
+
+   text-decoration: none;
+   text-align: center;
+   font-size: 1rem;
+   color: rgb(147, 147, 147); 
+   width: 75px;
+   height: 25px;
+   line-height: 25px;
+
+   border-radius: 3px;
+}
+.nav-item:hover{
+   background-color:rgb(242, 104, 30);
+   color: white;
+   font-weight: bold;
+
+}
+
+h1{
+   font-style: oblique;
+}
+
+#card-container{
+   display: flex;
+   flex-direction: row;
+   flex-flow: row wrap;
+   align-content: flex-start;
+   
+   /* align-self: center; */
+}
+
+.cards, .detail-cards{
+   /* align-self: center; */
+   border: 3px rgb(243, 242, 242) solid;
+   background-color: rgb(243, 242, 242);
+   margin: 25px 25px 55px 25px;
+   padding: 15px;
+   border-radius: 3px;
+}
+
+
+/*novela */
+.cards:hover{
+  /*  background-color:rgb(242, 104, 30); */
+   border: 3px rgb(242, 104, 30) solid;
+}
+.img-card{
+   border-radius: 3px;
+   width: 158px;
+   height: 250px;
+}
+
+.img-detail-card{
+   border-radius: 3px;
+   width: 300px;
+   height: 470px;
+
+}
+
+/*                                                          details.html    */
+
+#goBack-button{
+   border: none;
+   color: rgb(147, 147, 147);
+   font-size: 18px;
+}
+
+#goBack-button:hover {
+   background-color:rgb(242, 104, 30);
+   color: white;
+   font-weight: bold;
+   border-radius: 100px;
+   height: 100px;
+   width: 100px;
+}
+
+#card-container-detail{
+   display:flex ;
+   flex-direction: row;
+}
+
+
+
+/* gris 237 238 235
+ verde 0 169 108
+ verde 18 71 87
+ celeste 91 192 222  62 180 218
+ celeste 74 187 219
+ naranja 229 212 203
+ negro 17 17 17
+
+*/
