@@ -13,5 +13,5 @@ function makeCards(idContainer)
 makeCards('card-container');
 
 // la funcion makeCards genera una card y 
-// la envia a la funcion sendCard 
+// la envia a la funcion sendCard en el archivo main.js
 // para que la envie al archivo index.html
