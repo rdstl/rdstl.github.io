@@ -2,11 +2,10 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-
    background-color: white;
-   font-family:  'Arial Narrow', Arial ,sans-serif;
-
-   
+   font-family:  'Arial Narrow', Arial ,sans-serif;  
+  
+    /* font-family: 'Roboto', sans-serif;  */
 }
 
 html, body, #container {
@@ -14,10 +13,41 @@ html, body, #container {
    width: 99%;
 }
 
-#container{
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   #container{
+      display: flex;
+      flex-direction: column;
+   }
+ }
+ 
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+   
+ } 
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+   
+ } 
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+  
+ }
+
+
+
+/* #container{
    display: flex;
    flex-direction: column;
-}
+} */
 
 main{
    flex-grow: 1;
@@ -28,6 +58,8 @@ h1, h3{
    color: rgb(100, 100, 100);
    text-align: center;
 } 
+
+
 
 footer{
    background-color: rgb(23, 84, 103);
@@ -167,20 +199,3 @@ h1{
  negro 17 17 17
 
 */
-
-/* Extra small devices (phones, 600px and down) */
-/*   @media only screen and (max-width: 600px) {
- 
- }
-*/
-
-  
- /* Small devices (portrait tablets and large phones, 600px and up) */
-/*  @media only screen and (min-width: 600px) {
-   .example {background: green;}
- }
- */ 
- /* Medium devices (landscape tablets, 768px and up) */
-/*  @media only screen and (min-width: 768px) {
-   .example {background: blue;}
- }  */
