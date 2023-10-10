@@ -60,31 +60,7 @@ h1, h3{
    text-align: left;
 } 
 
-.gu{
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 1.8rem;
-   padding-left: .3rem;
-   padding-bottom: 0;
-   margin-bottom: 0;
-   color: rgb(0, 162, 232);
 
-}
-.editorial{
-   font-family: 'Times New Roman', Times, serif;
-   padding-left: .3rem;
-   padding-top: 0;
-   margin-top: 0;
-   font-size: 1.2rem;
-   font-style: italic;
-   color: rgb(127, 127, 127);
-}
-.slogan{
-   font-family: 'Times New Roman', Times, serif;
-   color: rgb(127, 127, 127);
-   font-size: 1.6rem;
-   font-style: italic;
-   text-align: right;
-}
 
 footer{
    background-color: rgb(23, 84, 103);
@@ -212,8 +188,32 @@ h1{
    display:flex ;
    flex-direction: row;
 }
+/*                                                                             titulo logo y slogan*/
+.gu{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.8rem;
+   padding-left: .3rem;
+   padding-bottom: 0;
+   margin-bottom: 0;
+   color: rgb(0, 162, 232);
 
-
+}
+.editorial{
+   font-family: 'Times New Roman', Times, serif;
+   padding-left: .3rem;
+   padding-top: 0;
+   margin-top: 0;
+   font-size: 1.2rem;
+   font-style: italic;
+   color: rgb(127, 127, 127);
+}
+.slogan{
+   font-family: 'Times New Roman', Times, serif;
+   color: rgb(127, 127, 127);
+   font-size: 1.6rem;
+   font-style: italic;
+   text-align: right;
+}
 
 /* gris 237 238 235
  verde 0 169 108
