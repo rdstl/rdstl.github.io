@@ -57,9 +57,34 @@ main{
 h1, h3{
    color: rgb(100, 100, 100);
    text-align: center;
+   text-align: left;
 } 
 
+.gu{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 1.8rem;
+   padding-left: .3rem;
+   padding-bottom: 0;
+   margin-bottom: 0;
+   color: rgb(0, 162, 232);
 
+}
+.editorial{
+   font-family: 'Times New Roman', Times, serif;
+   padding-left: .3rem;
+   padding-top: 0;
+   margin-top: 0;
+   font-size: 1.2rem;
+   font-style: italic;
+   color: rgb(127, 127, 127);
+}
+.slogan{
+   font-family: 'Times New Roman', Times, serif;
+   color: rgb(127, 127, 127);
+   font-size: 1.6rem;
+   font-style: italic;
+   text-align: right;
+}
 
 footer{
    background-color: rgb(23, 84, 103);
