@@ -25,7 +25,8 @@ main {                                       /* Flexbox settings for web page 2/
 h1, h3 {                                     /* h1 and h3 settings                                               */
    color       : rgb(100, 100, 100);
    text-align  : center;
-   text-align  : left;} 
+   text-align  : left;
+   font-style: oblique;}
 footer {                                     /*  */
    background-color  : rgb(23, 84, 103);
    width             : 100%;
@@ -52,68 +53,64 @@ footer p {                                   /*  */
    height            : 25px;
    line-height       : 25px;
    border-radius     : 3px;}
-.nav-item:hover {
-   background-color:rgb(242, 104, 30);
-   color: white;
-   font-weight: bold;}
-h1 {
-   font-style: oblique;}
-#card-container {
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   align-items: center;}
-.cards, .detail-cards { 
-   border: 3px rgb(243, 242, 242) solid;
-   background: rgb(230, 230, 230);
-   margin: 25px 25px 55px 25px;
-   padding: 15px;
-   border-radius: 3px;}
-.cards:hover {
+.nav-item:hover {                            /*   */
+   background-color  :rgb(242, 104, 30);
+   color             :white;
+   font-weight       : bold;}
+#card-container {                            /*   */
+   display        : flex;
+   flex-direction : column;
+   flex-wrap      : wrap;
+   align-items    : center;}
+.cards, .detail-cards {                      /*   */
+   border         : 3px rgb(243, 242, 242) solid;
+   background     : rgb(230, 230, 230);
+   margin         : 25px 25px 55px 25px;
+   padding        : 15px;
+   border-radius  : 3px;}
+.cards:hover {                               /*   */
   /*  background-color:rgb(242, 104, 30); */
-   border: 3px rgb(242, 104, 30) solid;}
-.img-card {
-   border-radius: 5px;
-   width: 245px;
-   height: auto;}
-.img-detail-card {
-   float: left;
-   margin-right: 15px;
-   margin-bottom: 15px;
-   width: 90px;
-   height: auto;
-   border-radius: 5px;}
-.detail-cards>h3 {
-   font-size: 1.2rem;
-   text-align: left;
-   margin-bottom: 5px;
-   background:rgb(230, 230, 230);}
+   border   : 3px rgb(242, 104, 30) solid;}
+.img-card {                                  /*   */
+   border-radius  : 5px;
+   width          : 245px;
+   height         : auto;}
+.img-detail-card {                           /*   */
+   float         : left;
+   margin-right  : 15px;
+   margin-bottom : 15px;
+   width         : 90px;
+   height        : auto;
+   border-radius : 5px;}
+.detail-cards>h3 {                           /*   */
+   font-size      : 1.2rem;
+   text-align     : left;
+   margin-bottom  : 5px;
+   background     :rgb(230, 230, 230);}
 .detail-cards>p {
    background:rgb(230, 230, 230);}
-/*                                             details.html                  */
-#goBack-button{
-   border: none;
-   color: rgb(147, 147, 147);
-   font-size: 18px;}
+#goBack-button {                             /*  details.html                  */
+   border      : none;
+   color       : rgb(147, 147, 147);
+   font-size   : 18px;}
 #goBack-button:hover {
-   background-color:rgb(242, 104, 30);
-   color: white;
-   font-weight: bold;
-   border-radius: 100px;
-   height: 100px;
-   width: 100px;}
-#card-container-detail{
-   display:flex ;
-   flex-direction: row;}
-/*                                             titulo logo y slogan          */
-.gu{
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 1.8rem;
-   padding-left: .3rem;
-   padding-bottom: 0;
-   margin-bottom: 0;
-   color: rgb(0, 162, 232);}
-.editorial{
+   background-color  :rgb(242, 104, 30);
+   color             : white;
+   font-weight       : bold;
+   border-radius     : 100px;
+   height            : 100px;
+   width             : 100px;}
+#card-container-detail {
+   display        :flex ;
+   flex-direction : row;}
+.gu {                                        /*  titulo logo y slogan                                             */
+   font-family    : 'Times New Roman', Times, serif;
+   font-size      : 1.8rem;
+   padding-left   : .3rem;
+   padding-bottom : 0;
+   margin-bottom  : 0;
+   color          : rgb(0, 162, 232);}
+.editorial {
    font-family: 'Times New Roman', Times, serif;
    padding-left: .3rem;
    padding-top: 0;
@@ -121,7 +118,7 @@ h1 {
    font-size: 1.1rem;
    font-style: italic;
    color: rgb(127, 127, 127);}
-.slogan{
+.slogan {
    font-family: 'Times New Roman', Times, serif;
    color: rgb(127, 127, 127);
    font-size: 1.3rem;
