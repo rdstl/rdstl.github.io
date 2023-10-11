@@ -26,7 +26,7 @@ h1, h3 {                                     /* h1 and h3 settings              
    color       : rgb(100, 100, 100);
    text-align  : center;
    text-align  : left;
-   font-style: oblique;}
+   font-style  : oblique;}
 footer {                                     /*  */
    background-color  : rgb(23, 84, 103);
    width             : 100%;
@@ -101,7 +101,7 @@ footer p {                                   /*  */
    height            : 100px;
    width             : 100px;}
 #card-container-detail {
-   display        :flex ;
+   display        : flex ;
    flex-direction : row;}
 .gu {                                        /*  titulo logo y slogan                                             */
    font-family    : 'Times New Roman', Times, serif;
@@ -111,19 +111,19 @@ footer p {                                   /*  */
    margin-bottom  : 0;
    color          : rgb(0, 162, 232);}
 .editorial {
-   font-family: 'Times New Roman', Times, serif;
-   padding-left: .3rem;
-   padding-top: 0;
-   margin-top: 0;
-   font-size: 1.1rem;
-   font-style: italic;
-   color: rgb(127, 127, 127);}
+   font-family    : 'Times New Roman', Times, serif;
+   padding-left   : .3rem;
+   padding-top    : 0;
+   margin-top     : 0;
+   font-size      : 1.1rem;
+   font-style     : italic;
+   color          : rgb(127, 127, 127);}
 .slogan {
-   font-family: 'Times New Roman', Times, serif;
-   color: rgb(127, 127, 127);
-   font-size: 1.3rem;
-   font-style: italic;
-   text-align: right;}
+   font-family : 'Times New Roman', Times, serif;
+   color       : rgb(127, 127, 127);
+   font-size   : 1.3rem;
+   font-style  : italic;
+   text-align  : right;}
 
 
 
