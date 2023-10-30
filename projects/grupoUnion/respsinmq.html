@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive sin media queries</title>
+   <style>
+      /* contexto
+      diseño responsive con css grid sin usar media queries
+      https://www.youtube.com/shorts/CcBVnXZ4Mc0
+      */
+      div > img         {
+         border-radius: 8px;
+         width: 100%;
+         height: auto;
+         box-shadow: 0px 0px 30px #000;      }
+      div               {
+         padding: 1px;
+         display: grid;
+         grid-template-columns: 
+         repeat(
+            auto-fit,
+            minmax(150px, 1fr) );  
+         gap: 32px;   }
+   </style>
+</head>
+<body>
+   <div>
+      <img src="/assets/img/cienciaTecgnologiaYGobierno.png" alt="a">
+      <img src="/assets/img/diasDeSumision.png" alt="b">
+      <img src="/assets/img/elMetodoDeLaEconomiaPolitica.png" alt="c">
+      <img src="/assets/img/elOrdenSensorial.png" alt="d">
+      <img src="/assets/img/estudiosSobreElAbusoDeLaRazon.png" alt="5">
+      <img src="/assets/img/historiaDelPensamientoEconomico.png" alt="6">
+      <img src="/assets/img/introduccionHistoricaALaEscuelaAustriacaDeEconomia.png" alt="7">
+      <img src="/assets/img/LaAccionHumana.png" alt="8">
+      <img src="/assets/img/laTeoriaDeLaExplotacion.png" alt="10">
+      <img src="/assets/img/liberalismoParaPadres.png" alt="11">
+   </div>
+</body>
+</html>

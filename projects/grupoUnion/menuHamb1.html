@@ -7,109 +7,84 @@
       
    </title>
    <style>
-      :root{
+      :root                                        {
          --white:#f9f9f9;
          --green:#229395;
          --green-light: #7acbcd;
          --black: #36383f;
-         --grey: #85888c;
-      }
-      *{
+         --grey: #85888c;      }
+      *                                            {
          margin: 0px;
          padding: 0px;
-         box-sizing: border-box;
-      }
-      body{
-         font-family: 'Arial Narrow', Arial, sans-serif;
-      }
-      main{
-         padding: 20px;
-      }
-      a{
-         text-decoration: none;
-      }
-      ul{
-         list-style: none;
-      }
-      .header{
+         box-sizing: border-box;      }
+      body                                         {
+         font-family: 'Arial Narrow', Arial, sans-serif;      }
+      main                                         {
+         padding: 20px;      }
+      a                                            {
+         text-decoration: none;      }
+      ul                                           {
+         list-style: none;      }
+      .header                                      {
          background-color: var(--green);
          box-shadow: 1px 1px 5px 0px var(--grey);
          position: sticky;
          top: 0;
-         width: 100%;
-      }
-      .logo{
+         width: 100%;      }
+      .logo                                        {
          display: inline-block ;
          color: var(--white);
          font-size: 60px;
-         margin-left: 10px;
-      }
-      .nav{
+         margin-left: 10px;      }
+      .nav                                         {
          width: 100%;
          height: 100%;
          position: fixed;
          background-color: var(--green);
          overflow: hidden;
          max-height: 0;
-         transition: max-height .5s ease-out;
-      }
-      .menu a{
+         transition: max-height .5s ease-out;      }
+      .menu a                                      {
          display: block;
          padding: 30px;
-         color: var(--white);
-      }
-      .menu a:hover{
-         background-color: var(--green-light);
-      }
-      .hamb{
+         color: var(--white);      }
+      .menu a:hover                                {
+         background-color: var(--green-light);      }
+      .hamb                                        {
          cursor: pointer;
          float: right;
-         padding: 40px 20px;
-      }
-      .hamb-line{
+         padding: 40px 20px;      }
+      .hamb-line                                   {
          background: var(--white);
          display: block;
          height: 2px;
          position: relative;
-         width: 24px;
-      }
-      .hamb-line::before, .hamb-line::after {
+         width: 24px;      }
+      .hamb-line::before, .hamb-line::after        {
          background: var(--white);
          content: '';
          display: block;
          height: 100%;
          position: absolute;
          transition: all .2s ease-out;
-         width: 100%;
-      }
-
-      .hamb-line::before{
-         top:5px;
-      }
-
-      .hamb-line::after{
-         top: -5px;
-      }
-      .side-menu{
-         display: none;
-      }
-
-      .side-menu:checked ~ nav{
-         max-height: 27%;
-      }
-      .side-menu:checked ~ .hamb .hamb-line{
-         background: transparent;
-      }
-
-      .side-menu:checked ~ .hamb .hamb-line::before {
+         width: 100%;      }
+      .hamb-line::before                           {
+         top:5px;      }
+      .hamb-line::after                            {
+         top: -5px;      }
+      .side-menu                                   {
+         display: none;      }
+      .side-menu:checked ~ nav                     {
+         max-height: 27%;      }
+      .side-menu:checked ~ .hamb .hamb-line        {
+         background: transparent;      }
+      .side-menu:checked ~ .hamb .hamb-line::before{
          transform: rotate(-45deg);
-         top:0;
-      }
+         top:0;      }
       .side-menu:checked ~ .hamb .hamb-line::after {
          transform: rotate(45deg) ;
-         top: 0;
-      }
-      @media (min-width: 768px){
+         top: 0;      }
+      @media (min-width: 768px)                    {
          .nav{
             max-height:none;
             top: 0;
@@ -117,19 +92,14 @@
             float: right;
             width: -moz-fit-content;
             width: fit-content;
-            background-color: transparent;
-         }
+            background-color: transparent;  }
          .menu li{
-            float: left;
-         }
+            float: left;         }
          .menu a:hover{
             background-color: transparent;
-            color: var(--green-light);
-         }
+            color: var(--green-light);         }
          .hamb{
-            display: none;
-         }
-      }
+            display: none;}}
 
 
    </style>
