@@ -5,109 +5,149 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>rd portfolio</title>
    <style>
-   *                                      { /* */ 
-      margin      : 0;
-      padding     : 0;
-      box-sizing  : border-box;
-      font-family : 'Arial Narrow', Arial, sans-serif;
-      color       : #d6d6dc;}
-   html, body, .main-container            { /* */ 
+   *                                            { /* */ 
+      margin            : 0;
+      padding           : 0;
+      box-sizing        : border-box;
+      font-family       : 'Arial Narrow', Arial, sans-serif;
+      background-color  : #444444;
+      color             : #d6d6dc;}
+   html, body, .main-container                  { /* */ 
       height      : 100%;}
-   .main-container                        { /* */
+   .main-container                              { /* */
       display       : flex;
       flex-direction: column;}
-   main                                   { /* */
-      flex-grow: 1;
-      background-color: #444444;}
-   header, footer                         { /* */
-      background-color: #444444;}
-   header                                 { /* */
-      text-align: right;}
-   .main-menu                             { /* Estilos para el menú principal */
-      list-style        : none;
-      display           : flex;
-      padding           : 0; 
-      justify-content   : flex-end;
+   main                                         { /* */
+      flex-grow         : 1;
+      background-color  : #444444;}
+   header, footer                               { /* */
       background-color  : #444444;
       color             : #d6d6dc;}
-   .main-menu li                          {
-      font-size         : .9rem; 
-      
-      margin            : 0 10px;
-      position          : relative;}
-   .sub-menu                              { /* Estilos para los submenús */
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #44444444;
-      color: #d6d6dc;
-      padding: 0;}
-   .main-menu li:hover .sub-menu          {
-      display: block;
-      list-style: none;}
-   .sub-menu li                           { /* Estilos para los elementos en los submenús */
-      padding: 10px;}
-   a                                      { /* Otros estilos */
-      text-decoration   : none;
-      color             : #d6d6dc;}
-   .main-menu li:hover                    { /* Estilos para el hover (cambio de color de fondo) */
-      background-color  : #444444;
-      color             : #d6d6dc}
-   
-      .FSDN                               {
-         font-size: 2.0rem;
-         position: absolute;
-         top: 145px;
-         left: 55px;
-         z-index: 5;
-      }
-      .rdimg                              {
-         width: 90px;
-         position: absolute;
-         top: 95px;
-         left: 210px;
-      }
+   header                                       { /* */
+      text-align  : left;}
+   .FSDN                                        {
+         font-size   : 2.0rem;
+         position    : absolute;
+         top         : 145px;
+         left        : 55px;
+         z-index     : 5;      }
+   .rdimg                                       {
+         width    : 90px;
+         position : absolute;
+         top      : 95px;
+         left     : 210px;      }
+   :root                                        {
+         --white        :#f9f9f9;
+         --green        :#229395;
+         --green-light  :#7acbcd;
+         --black        :#36383f;
+         --grey         :#444444;      }
+   main                                         {
+         padding  : 20px;      }
+   a                                            {
+         text-decoration   : none;      }
+   ul                                           {
+         list-style  : none;      }
+   .header                                      {
+         background-color  : var(--grey);
+         box-shadow        : 1px 1px 5px 0px var(--grey);
+         position          : sticky;
+         top               : 0;
+         width             : 100%;     
+         padding-left: 5px;
+         height            : 75px; }
+   .logo                                        {
+         display     : inline-block ;
+         color       : var(--white);
+         font-size   : 40px;
+         margin-left : 15px;
+         line-height : 70px ;      }
+   .nav                                         {
+         width             : 100%;
+         height            : 100%;
+         position          : fixed;
+         background-color  : var(--green);
+         overflow          : hidden;
+         max-height        : 0;
+         transition        : max-height .5s ease-out;      }
+   .menu a                                      {
+         display  : block;
+         padding  : 30px;
+         color    : var(--white);      }
+   .menu a:hover                                {
+         background-color: var(--green-light);      }
+   .hamb                                        {
+         cursor   : pointer;
+         float    : right;
+         padding  : 40px 20px;      }
+   .hamb-line                                   {
+         background  : var(--white);
+         display     : block;
+         height      : 2px;
+         position    : relative;
+         width       : 24px;      }
+   .hamb-line::before, .hamb-line::after        {
+         background  : var(--white);
+         content     : '';
+         display     : block;
+         height      : 100%;
+         position    : absolute;
+         transition  : all .2s ease-out;
+         width       : 100%;      }
+   .hamb-line::before                           {
+         top   :5px;      }
+   .hamb-line::after                            {
+         top   : -5px;      }
+   .side-menu                                   {
+         display  : none;      }
+   .side-menu:checked ~ nav                     {
+         max-height  : 27%;      }
+   .side-menu:checked ~ .hamb .hamb-line        {
+         background  : transparent;      }
+   .side-menu:checked ~ .hamb .hamb-line::before{
+         transform   : rotate(-45deg);
+         top         :0;      }
+   .side-menu:checked ~ .hamb .hamb-line::after {
+         transform   : rotate(45deg) ;
+         top         : 0;      }
+   @media (min-width: 601px)                    {
+         .nav{
+            max-height:none;
+            top: 0;
+            position: relative;
+            float: right;
+            width: -moz-fit-content;
+            width: fit-content;
+            background-color: transparent;  }
+         .menu li{
+            float: left;         }
+         .menu a:hover{
+            background-color: transparent;
+            color: var(--green-light);         }
+         .hamb{
+            display: none;}}
 
    </style>
 </head>
 <body>
    <div class="main-container">
-      <header>
-         <nav>
-            <ul class="main-menu">
-                <li><a href="#">Services</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Sub1</a></li>
-                        <li><a href="#">Sub2</a></li>
-                        <li><a href="#">Sub3</a></li>
-                        <li><a href="#">Sub4</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Projects</a>
-                    <ul class="sub-menu">
-                        <li><a href="./projects/grupoUnion/index.html">Grupo Union Editorial</a></li>
-                        <li><a href="#">Subastas</a></li>
-                        <li><a href="#">DP Consulating</a></li>
-                        <li><a href="#">Metal Work</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">About</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Sub1</a></li>
-                        <li><a href="#">Sub2</a></li>
-                        <li><a href="#">Sub3</a></li>
-                        <li><a href="#">Sub4</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+      <header class="header">
+         <a href="#" class="logo">roland distel</a>
+      <input type="checkbox" id="side-menu" class="side-menu" name="side-menu">
+      <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+      <nav class="nav" >
+         <ul class="menu" >
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+         </ul>
+      </nav>
 
       </header>
-      <main class="main"><a href="https://rdstl.github.io/" class="FSDN">Rolando Distel</a>
+      <main class="main"><a href="https://rdstl.github.io/" class="FSDN">...</a>
       <!-- <p>...generar más, costar menos</p> -->
-      <!-- <p>generar + , costar -</p> -->
-         <img src="./img/RolandoDistel.jpg" alt="RD" class="rdimg">
+       <p>generar + , costar -</p> 
+        <!--  <img src="./img/RolandoDistel.jpg" alt="RD" class="rdimg"> -->
       </main>
       
       <footer>footer</footer>
