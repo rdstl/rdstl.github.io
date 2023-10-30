@@ -10,25 +10,96 @@
       padding     : 0;
       box-sizing  : border-box;
       font-family : 'Arial Narrow', Arial, sans-serif;
-      color       : #e4e5ef;}
-
-   html, body, .main-container              { /* */ 
+      color       : #d6d6dc;}
+   html, body, .main-container            { /* */ 
       height      : 100%;}
    .main-container                        { /* */
       display       : flex;
       flex-direction: column;}
-   main                                  { /* */
+   main                                   { /* */
       flex-grow: 1;
       background-color: #444444;}
    header, footer                         { /* */
       background-color: #444444;}
+   header                                 { /* */
+      text-align: right;}
+   .main-menu                             { /* Estilos para el menú principal */
+      list-style        : none;
+      display           : flex;
+      padding           : 0; 
+      justify-content   : flex-end;
+      background-color  : #444444;
+      color             : #d6d6dc;}
+   .main-menu li                          {
+      font-size         : .9rem; 
+      
+      margin            : 0 10px;
+      position          : relative;}
+   .sub-menu                              { /* Estilos para los submenús */
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #44444444;
+      color: #d6d6dc;
+      padding: 0;}
+   .main-menu li:hover .sub-menu          {
+      display: block;
+      list-style: none;}
+   .sub-menu li                           { /* Estilos para los elementos en los submenús */
+      padding: 10px;}
+   a                                      { /* Otros estilos */
+      text-decoration   : none;
+      color             : #d6d6dc;}
+   .main-menu li:hover                    { /* Estilos para el hover (cambio de color de fondo) */
+      background-color  : #444444;
+      color             : #d6d6dc}
+   
+      .FSDN                               {
+         font-size: 2.5rem;
+         position: absolute;
+         top: 45px;
+         left: 55px;
+      }
+
    </style>
 </head>
 <body>
    <div class="main-container">
-      <header>header</header>
-      <main class="main"><p>roland distel</p>
+      <header>
+         <nav>
+            <ul class="main-menu">
+                <li><a href="#">Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Sub1</a></li>
+                        <li><a href="#">Sub2</a></li>
+                        <li><a href="#">Sub3</a></li>
+                        <li><a href="#">Sub4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Projects</a>
+                    <ul class="sub-menu">
+                        <li><a href="./projects/grupoUnion/index.html">Grupo Union Editorial</a></li>
+                        <li><a href="#">Subastas</a></li>
+                        <li><a href="#">DP Consulating</a></li>
+                        <li><a href="#">Metal Work</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Sub1</a></li>
+                        <li><a href="#">Sub2</a></li>
+                        <li><a href="#">Sub3</a></li>
+                        <li><a href="#">Sub4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
+      </header>
+      <main class="main"><a href="https://rdstl.github.io/" class="FSDN">Rolando Distel</a>
+      <!-- <p>...generar más, costar menos</p> -->
+   <!--    <p>generar + , costar -</p> -->
       </main>
       
       <footer>footer</footer>
