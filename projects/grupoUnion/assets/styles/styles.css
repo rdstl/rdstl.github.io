@@ -10,9 +10,9 @@ main                                      {  /* Flexbox settings for web page 2/
       flex-grow   : 1;
       padding     : 15px;}
 @media only screen and (max-width: 600px) {  /* Extra small devices (phones, 600px and down)                     */
-#container{
-      display: flex;
-      flex-direction: column;      
+   #container                             {
+      display        : flex;
+      flex-direction : column;      
    } }
 @media only screen and (min-width: 601px) {  /* Small devices (portrait tablets and large phones, 600px and up)  */
    #container{
