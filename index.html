@@ -109,39 +109,59 @@
          transform   : rotate(45deg) ;
          top         : 0;      }
    .cards                                       {
-      /* width: 160px;
-      height: 200px; */
-      /* background-color: #636262; */
       border-radius: 3px;
-      padding-top: 5px;
+      padding: 0px;
       text-align: center;   }
+   
    @media (max-width: 300px) {  /* Extra extra small (300px and down)                               */ 
       .main       {                                  
          display                 : grid;
          grid-template-columns   : 1fr;
-         gap: 5px;}
-      .cards                           {         
+         grid-template-rows      : 200px;
          width: 100%;
          height: 200px;
-         background-color: #d550f6; } }
+         overflow: hidden;
+         gap: 5px;}
+      .cards                           {         
+         background-color: #d550f6; } 
+      .cards img                                   {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         }}
    @media (min-width: 301px) {  /* Extra small devices (phones, 600px and down)                     */ 
       .main       {                                  
          display                 : grid;
          grid-template-columns   : 1fr 1fr;
-         gap: 5px;}
-      .cards                                       {
+         grid-template-rows      : 200px;
          width: 100%;
          height: 200px;
-         background-color: #636262;}}
+         overflow: hidden;
+         gap: 7px;}
+      .cards                                       {
+         background-color: #636262;}
+      .cards img                                   {
+         width: 100%;
+         height: 100%; 
+         object-fit: cover}}
    @media (min-width: 601px) {  /* Small devices (portrait tablets and large phones, 600px and up)  */ 
       .main       {                                  
          display                 : grid;
          grid-template-columns   : 1fr 1fr 1fr;
+         grid-template-rows      : 250px ;
+         width: 100%;
+         height: 250px;
+         overflow: hidden;
          gap: 5px;}
       .cards                                       {
          width: 100%;
          height: 250px;
          background-color: #ef950f;     }
+      .cards img                                   {
+         width: 100%;
+         height: 100%; 
+         object-fit: cover}
+      
       .nav{
             max-height:none;
             top: 0;
@@ -161,16 +181,32 @@
       .main                                  {                                  
          display                 : grid;
          grid-template-columns   : 1fr 1fr 1fr 1fr;
+         grid-template-rows: 300px;
+         width: 100%;
+         height: 300px;
+         overflow: hidden;
          gap: 5px;}
       .cards                                       {
          width: 100%;
          height: 300px;
-         background-color: #59f12b; }}
+         background-color: #59f12b; }
+      .cards img                                   {
+         width: 100%;
+         height: 100%; 
+         object-fit: cover} }
    @media (min-width: 992px) {  /* Large devices (laptops/desktops, 992px and up)                   */ 
       .main                                  {                                  
          display                 : grid;
          grid-template-columns   : 1fr 1fr 1fr 1fr 1fr;
-         gap: 5px;}}
+         grid-template-rows      : 300px;
+         width: 100%;
+         height: 300px;
+         overflow: hidden;
+         gap: 5px;}
+         .cards img                                   {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover}         }
    @media (min-width: 1200px){  /* Extra large devices (large laptops and desktops, 1200px and up)  */ }
 
    
@@ -194,23 +230,22 @@
       <main class="main" >
 
          <div class="cards card1">
-            project One
+            
+            <img src="./img/mtlwrkH300.jpg" alt="mtlwrk"> 
          </div>
-         <div class="cards card1">
+         <div class="cards card2">
             project Two
          </div>
-         <div class="cards card1">
+         <div class="cards card3">
             project Three
          </div>
-         <div class="cards card1">
+         <div class="cards card4">
             project four
          </div>
-         <div class="cards card1">
+         <div class="cards card5">
             project five
          </div>
-         <div class="cards card1">
-            project six
-         </div>
+         
       </main>
       
       <footer>footer</footer>
