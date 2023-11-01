@@ -109,36 +109,37 @@
          transform   : rotate(45deg) ;
          top         : 0;      }
    .cards                                       {
-      border-radius: 3px;
-      padding: 0px;
-      text-align: center;   }
+      border-radius     : 3px;
+      padding           : 15px;
+      background-color  : white;
+      text-align        : center;   }
    .cards img                                   {
          border-radius: 3px;         }
-   h4                                    {
+   h4                                           {
       background  : transparent; 
       position    : absolute;
-      color       : #0e0e7c;
-      font-size   : 1.8rem;
-      bottom      : 15px ;
-      right       : 5px  ;
+      color       : orange;
+      bottom      : 5px ;
+      right       : 3px  ;
       z-index     : 1;   }
    @media (max-width: 300px) {  /* Extra extra small (300px and down)                               */ 
-      .main       {                                  
+      .main                            {                                  
          display                 : grid;
          grid-template-columns   : 1fr;
-         grid-template-rows      : 200px;
-         width: 100%;
-         height: 200px;
-         overflow: hidden;
-         position: relative;
-         gap: 5px;}
+         grid-template-rows      : 150px;
+         width                   : 100%;
+         height                  : 150px;
+         overflow                : hidden;
+         position                : relative;
+         gap                     : 10px;}
       .cards                           { 
-         position: relative;        
-         background-color: #d550f6; } 
-      .cards img                                   {
-         width: 100%;
-         height: 100%;
-         object-fit: cover;            }}
+         position          : relative;  } 
+      .cards img                       {
+         width             : 80%;
+         height            : 80%;
+         object-fit        : cover;            }
+      h4                               {
+         font-size   : 1.5rem;}}
    @media (min-width: 301px) {  /* Extra small devices (phones, 600px and down)                     */ 
       .main       {                                  
          display                 : grid;
@@ -148,16 +149,18 @@
          height: 200px;
          overflow: hidden;
          position: relative;
-         gap: 7px;}
+         gap: 9px;}
       .cards                                       {
-         position: relative;
-         background-color: #636262;}
+         position: relative;}
       .cards img                                   {
          width: 100%;
          height: 100%; 
-         object-fit: cover}}
+         object-fit: cover}
+      
+      h4                               {
+         font-size   : 1.3rem;}      }
    @media (min-width: 601px) {  /* Small devices (portrait tablets and large phones, 600px and up)  */ 
-      .main       {                                  
+      .main                {                                  
          display                 : grid;
          grid-template-columns   : 1fr 1fr 1fr;
          grid-template-rows      : 250px ;
@@ -165,16 +168,14 @@
          height: 250px;
          overflow: hidden;
          position: relative;
-         gap: 5px;}
-      .cards                                       {
-         position: relative;
-         background-color: #ef950f;     }
-      .cards img                                   {
+         gap: 9px;}
+      .cards               {
+         position: relative;}
+      .cards img           {
          width: 100%;
          height: 100%; 
          object-fit: cover}
-      
-      .nav{
+      .nav                 {
             max-height:none;
             top: 0;
             position: relative;
@@ -182,15 +183,15 @@
             width: -moz-fit-content;
             width: fit-content;
             background-color: transparent;  }
-      .menu li{
+      .menu li             {
             float: left;         }
-      .menu a:hover{
+      .menu a:hover        {
             background-color: transparent;
             color: #9dc352;         }
-      .hamb{
+      .hamb                {
             display: none;}}
    @media (min-width: 768px) {  /* Medium devices (landscape tablets, 768px and up)                 */ 
-      .main                                  {                                  
+      .main                    {                                  
          display                 : grid;
          grid-template-columns   : 1fr 1fr 1fr 1fr;
          grid-template-rows: 300px;
@@ -199,15 +200,14 @@
          overflow: hidden;
          position: relative;
          gap: 5px;}
-      .cards                                       {
-         position: relative;
-         background-color: #59f12b; }
-      .cards img                                   {
+      .cards                   {
+         position: relative;}
+      .cards img               {
          width: 100%;
          height: 100%; 
          object-fit: cover} }
    @media (min-width: 992px) {  /* Large devices (laptops/desktops, 992px and up)                   */ 
-      .main                                  {                                  
+      .main                   {                                  
          display                 : grid;
          grid-template-columns   : 1fr 1fr 1fr 1fr 1fr;
          grid-template-rows      : 300px;
@@ -216,15 +216,19 @@
          overflow: hidden;
          position: relative;
          gap: 5px;}
-         .cards img                                   {
+      .cards                  {
+         position: relative;}
+      .cards img              {
             width: 100%;
             height: 100%; 
             object-fit: cover}         }
    @media (min-width: 1200px){  /* Extra large devices (large laptops and desktops, 1200px and up)  */ }
-
-   
    </style>
 </head>
+
+
+
+
 <body>
    <div class="main-container">
       <header class="header">
@@ -244,11 +248,11 @@
 
          <div class="cards card1">
             <h4>metalwork</h4>
-            <img src="./img/mtlwrk.jpg" alt="mtlwrk"> 
+            <a href="./projects/metalwork/index.html"><img src="./img/mtlwrk.jpg" alt="mtlwrk"></a> 
          </div>
          <div class="cards card4">
             <h4>grupo unión</h4>
-            <img src="./img/grupounion.jpg" alt="grupounion">
+            <a href="./projects/grupoUnion/index.html"><img src="./img/grupounion.jpg" alt="grupounion"></a>
          </div>
          <div class="cards card2">
             <h4>auctions</h4>
@@ -258,7 +262,7 @@
             <h4>accounting</h4>
             <img src="./img/accounting.jpg" alt="accounting">
          </div>
-         
+        
          <div class="cards card5">
             <h4>trading</h4>
             <img src="./img/trading.jpg" alt="trading">
