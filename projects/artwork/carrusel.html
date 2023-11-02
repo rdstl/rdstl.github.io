@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Carrusel</title>
+   <style>
+      body                          {
+         margin      : 0;
+         padding     : 0;
+         box-sizing  : border-box;      }
+      .galeria                      {
+         padding: 16px;      }
+      .imagen-principal img         {
+         width: 100%;
+         object-fit: cover;      
+         display: block;}
+      .lista-imagenes img           {
+         width       : 100%;
+         object-fit  : cover;      
+         width       : 80px;     
+         height: 80px;   
+         margin-right: 10px;
+         display: block;}
+      .lista-imagenes               {
+         display: flex;
+         overflow-y: auto;      
+         margin-top: 10px }
+   </style>
+</head>
+<body>
+   <main>
+      <div class="galeria">
+         <div class="imagen-principal">
+            <img src="./img/imagen1.jpg" alt="uno">
+         </div>
+         <div class="lista-imagenes">
+            <img src="./img/imagen2.jpg" alt="2">
+            <img src="./img/imagen3.jpg" alt="3">
+            <img src="./img/imagen4.jpg" alt="4">
+            <img src="./img/imagen5.jpg" alt="5">
+            <img src="./img/imagen6.jpg" alt="6">
+
+         </div>
+
+      </div>
+   </main>
+</body>
+</html>

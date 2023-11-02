@@ -1,174 +1,102 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>carrousel</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Amazing Events</title>
+  </head>
+  
+  <body>
 
-   <style>
-        *                                           {
-            margin      : 0;
-            padding     : 0;
-            box-sizing  : border-box;
-            font-family : 'Arial Narrow', Arial, sans-serif;        }
-        html, body, .main-container                 {
-        height  : 100%;    }
-        .main-container                             {
-            display         : flex;
-            flex-direction  : column;        }
-        header                                      {
-            background-color    : #444444;
-            color               : #e8e8e8;
-            height              : 100px;  
-            padding             : 15px;}
-        main                                        {
-            flex-grow   : 1;        
-            padding     : 1px;}
-        footer                                      {
-            display             : flex;
-            flex-direction      : column;
-            background-color    : #444444;
-            color               : #ffffff; 
-            height              : 45px;
-            padding             : 15px;}
-        .footer-sub                                 {
-            height          : 5px;
-            background-color: #fa7f03;    }
-        .carousel                                   {
-            position    : absolute;
-            top         : 45px;
-            right       : 45px;
-            overflow    : hidden;
-            width       : 300px;
-            height      : 185px;
-            /* border      : 1px solid #444444; */ }
-        .carousel-wrapper                           {
-            display     : flex;
-            transition  : transform 0.3s ease-in-out; }
-        .slide                                      {
-            flex    : 0 0 100%;  }
-        img                                         {
-            width   : 100%;
-            height  : auto;    
-            object-fit: cover ; }
-        button                                      {
-            position    : absolute;
-            top         : 50%;
-            transform   : translateY(-50%);
-            /* background  : transparent; */
-            border      : none; 
-            /* font-size   : 28px; */
-            cursor      : pointer;  }
-        .prev                                       {
-            left                : 0px; 
-            padding             : 0;
-            width               : 10px;
-            height              : 100%; 
-            color               : white;   
-            background-color    : #fa7f03;
-            opacity             : 60%;      }
-        .next                                       {
-            right               : 0px;
-            padding             : 0;
-            width               : 10px;
-            height              : 100%;
-            color               : white;  
-            background-color    : #fa7f03;
-            opacity             : 60%;      }
-        .bici                                       {
-            width       : 180px;
-            height      : auto;
-            object-fit  : cover;         }
-   </style>
+    <div  class="container-flex m-4">
+      
 
-</head>
-<body>
-    <div class="main-container">
-        <header>header        </header>
-        <main>
-        <div class="carousel">
-            <div class="carousel-wrapper">
-                <div class="slide">
-                    <a href="pagina1.html">
-                        <img src="./img/imagen1.jpg" alt="Imagen 1">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="pagina2.html">
-                        <img src="./img/imagen2.jpg" alt="Imagen 2">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="pagina3.html">
-                        <img src="./img/imagen3.jpg" alt="Imagen 3">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="pagina4.html">
-                        <img src="./img/imagen4.jpg" alt="Imagen 4">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="pagina5.html">
-                        <img src="./img/imagen5.jpg" alt="Imagen 5">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="pagina6.html">
-                        <img src="./img/imagen6.jpg" alt="Imagen 6">
-                    </a>
-                </div>
-                <div class="slide">
-                    <a href="pagina7.html">
-                        <img src="./img/imagen7.jpg" alt="Imagen 7">
-                    </a>
-                </div>
-                
+        <!-- header -->
+      <div class="row mb-3">
+          <img src="./img/amazing_brand.png" class="col-4 col-md-2" alt="brand">
+          <nav class="col-12 col-md-10 text-white">
+            
+            <div class="row gap-1 d-flex justify-content-end">
+              <a class="col btn btn-danger text-white botoncab" href="#" role="button">Home</a>
+              <a class="col btn btn-danger text-white botoncab" href="./upcoming_events.html" role="button">Upcoming Events</a>
+              <a class="col btn btn-danger text-white botoncab" href="./past_events.html" role="button">Past Events</a>
+              <a class="col btn btn-danger text-white botoncab" href="./contact.html" role="button">Contact</a>
+              <a class="col btn btn-danger text-white botoncab" href="./stats.html" role="button">Stats</a>
             </div>
+          
+          </nav>
+      </div>
+      
+      <!-- Subheader -->
+      <div class="row">
+        <div class="col-12">
+          <div id="subheader" class="row gap-1">
             
-            <button class="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="3 0 16 16">
-                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-            </svg></button>
+           <a class="col col-md btn border" href="./stats.html" role="button" aria-label="Prev"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16"><path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"></path></svg></a>
             
-            
-            <button class="next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="3 0 16 16">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg></button> 
+            <p class="col-6 col-md-9 border">HOME</p>
+
+           <a class="col col-md btn border" href="./upcoming_events.html" role="button" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16"><path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"></path></svg></a>
+          </div>
         </div>
+      </div>
+
+      <!-- Categoria y Buscador -->
+      <form class="m-2 p-4 fondo">
+      <div class="col-12">
+        <div class="row" id="filterContainer"></div>
+      </div>                  
+        <div class="col-12 p-3 m-2">
+          <div class="row gap-1">
+            <label for="texto" class="visually-hidden">búsqueda</label>
+            <input type="text" class="col form-control-border" id="texto" name="texto"> 
+            <div id="lupita"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg></div>
+
+          </div>
+        </div> 
+      </form>
+
+      <main>
         <div>
-            <img src="./img/imagen5.jpg"  class="bici" alt="bici">
+          <div class="container-fluid">
+             <div class="row g-3" id="eventsContainer"></div>
+          </div>
         </div>
-        </main>
-        <footer>
-            <div>footer</div>
-        </footer>
-    </div>
-  <script>
-        const carousel      = document.querySelector('.carousel');
-        const wrapper       = document.querySelector('.carousel-wrapper');
-        const slides        = document.querySelectorAll('.slide'); /* contruye un array de las veces que aparece la clase .slice*/
-        const prevButton    = document.querySelector('.prev');
-        const nextButton    = document.querySelector('.next');
+      </main>
 
-        let currentIndex = 0;
+ 
+
+    <!-- Pie Pagina -->
+    <footer id="footer" class="row">
         
-        function goToSlide(index) {
-            currentIndex = index;
-            const offset = -currentIndex * 100;
-            wrapper.style.transform = `translateX(${offset}%)`; }
-
-        prevButton.addEventListener('click', () => {
-            
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            goToSlide(currentIndex);
-        });
-
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % slides.length;
-            goToSlide(currentIndex);
-        });
-
-  </script>
+      <div class="col-5 col-md-9">
+        <a href="https://www.facebook.com/"><img class="col p-1" src="./img/facebook.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/"><img class="col p-1" src="./img/instagram.png" alt="Instagram"></a>
+        <a href="https://web.whatsapp.com/"><img class="col p-1" src="./img/whatsapp.png" alt="Whatapp"></a>
+      </div>
+      <p class="col col-md-3">Desarrollo Web 01 TM</p>
     
-</body>
+  </footer>  
+
+    </div>
+  
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ 
+
+ 
+ 
+    </body>
 </html>
+
+ 
