@@ -110,7 +110,7 @@
          top         : 0;      }
    .main                                        {
       display  : grid;
-      overflow : hidden;
+      /* overflow : hidden; */
       position : relative;         }
    .cards                                       {
       border-radius     : 3px;
@@ -159,7 +159,7 @@
       h4                               {
          font-size   : 1.3rem;}      }
    @media only screen and (min-width: 601px) {  /* Small devices (portrait tablets and large phones, 600px and up)  */ 
-      .main                {                                  
+       .main                {                                  
          grid-template-columns: 1fr 1fr 1fr;
          grid-template-rows   : 250px 250px 250px;
          width                : 100%;
@@ -185,7 +185,7 @@
             background-color: transparent;
             color: #9dc352;         }
       .hamb                {
-            display: none;}}
+            display: none;}} 
    @media only screen and (min-width: 768px) {  /* Medium devices (landscape tablets, 768px and up)                 */ 
       .main                    {                                  
          
@@ -214,7 +214,7 @@
             height      : 100%; 
             object-fit  : cover}         }
    @media only screen and (min-width: 1200px){  /* Extra large devices (large laptops and desktops, 1200px and up)  */ 
-       .main                   {                                  
+      .main                   {                                  
          grid-template-columns   : 1fr 1fr 1fr 1fr 1fr 1fr;
          grid-template-rows      : 150px 150px;
          width                   : 100%;
@@ -225,7 +225,7 @@
       .cards img              {
             width       : 100%;
             height      : 100%; 
-            object-fit  : cover}     } 
+            object-fit  : cover}   } 
    </style>
 </head>
 
@@ -265,7 +265,6 @@
             <h4>accounting</h4>
             <img src="./img/accounting.jpg" alt="accounting">
          </div>
-        
          <div class="cards card5">
             <h4>trading</h4>
             <img src="./img/trading.jpg" alt="trading">
