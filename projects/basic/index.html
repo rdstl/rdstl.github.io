@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/normalize.css">
+   <title>rd portfolio</title>
+   <style>
+   *                                            { /* */ 
+      margin            : 0;
+      padding           : 0;
+      box-sizing        : border-box;
+      font-family       : 'Arial Narrow', Arial, sans-serif;
+      background-color  : #444444;
+      color             : #d6d6dc;}
+   html, body, .main-container                  { /* */ 
+      height      : 100%;}
+   .main-container                              { /* */
+      display       : flex;
+      flex-direction: column;}
+   main                                         { /* */
+      flex-grow         : 1;
+      background-color  : #444444;
+      padding  : 20px; }
+   header                                       { /* */
+      background-color  : #444444;
+      color             : #d6d6dc;}
+   footer                                       { /**/
+      background-color: #6b9d06;}
+   header                                       { /* */
+      text-align  : left;}
+   .rdimg                                       {
+         width    : 90px;
+         position : absolute;
+         top      : 95px;
+         left     : 210px;      }
+   :root                                        {
+         --white        :#f9f9f9;
+         --green        :#229395;
+         --green-light  :#7acbcd;
+         --black        :#36383f;
+         --grey         :#444444;      }
+   a                                            {
+         text-decoration   : none;      }
+   ul                                           {
+         list-style  : none;      }
+   .header                                      {
+         background-color  : var(--grey);
+         box-shadow        : 1px 1px 5px 0px var(--grey);
+         position          : sticky;
+         top               : 0;
+         width             : 100%;     
+         padding-left      : 5px;
+         height            : 75px; }
+   .rdimg                                     {
+      width    : 150px;
+      /* float    : right;  */
+      padding  : 10px;
+   }
+
+   .logo                                        {
+         display     : inline-block ;
+         color       : var(--white);
+         font-size   : 30px;
+         margin-left : 15px;
+         line-height : 75px;}
+   .sup                                         {
+      font-size: 15px;
+      color: orange;}
+   .nav                                         {
+         width             : 100%;
+         height            : 100%;
+         position          : fixed;
+         background-color  : var(--green);
+         overflow          : hidden;
+         max-height        : 0;
+         transition        : max-height .5s ease-out;      }
+   .menu a                                      {
+         display  : block;
+         padding  : 30px;
+         color    : var(--white);      }
+   .menu a:hover                                {
+         background-color: #6e863d;      }
+   .hamb                                        {
+         cursor   : pointer;
+         float    : right;
+         padding  : 40px 20px;      }
+   .hamb-line                                   {
+         background  : var(--white);
+         display     : block;
+         height      : 2px;
+         position    : relative;
+         width       : 24px;      }
+   .hamb-line::before, .hamb-line::after        {
+         background  : var(--white);
+         content     : '';
+         display     : block;
+         height      : 100%;
+         position    : absolute;
+         transition  : all .2s ease-out;
+         width       : 100%;      }
+   .hamb-line::before                           {
+         top   :5px;      }
+   .hamb-line::after                            {
+         top   : -5px;      }
+   .side-menu                                   {
+         display  : none;      }
+   .side-menu:checked ~ nav                     {
+         max-height  : 27%;      }
+   .side-menu:checked ~ .hamb .hamb-line        {
+         background  : transparent;      }
+   .side-menu:checked ~ .hamb .hamb-line::before{
+         transform   : rotate(-45deg);
+         top         : 0;      }
+   .side-menu:checked ~ .hamb .hamb-line::after {
+         transform   : rotate(45deg) ;
+         top         : 0;      }
+   
+   .main                                        {
+      display  : grid;
+      /* overflow : hidden; */
+      position : relative;         }
+   .cards                                       {
+      border-radius     : 3px;
+      padding           : 15px;
+      background-color  : white;
+      text-align        : center;   }
+   .cards img                                   {
+         border-radius: 3px;         }
+   h4                                           {
+      background  : transparent; 
+      position    : absolute;
+      color       : orange;
+      bottom      : 5px ;
+      right       : 3px  ;
+      z-index     : 1;   }
+   img                                          {
+         margin-top: 0px;   }
+   
+   
+   @media only screen and (max-width: 300px) {  /* Extra extra small (300px and down)                               */ 
+      .main                            {                                  
+         grid-template-columns   : 1fr;
+         grid-template-rows      : 120px 120px 120px 120px 120px 120px;
+         width                   : 100%;
+         height                  : 150px;
+         gap                     : 10px;}
+      .cards                           { 
+         position          : relative;} 
+      .cards img                       {
+         width             : 80%;
+         height            : 80%;
+         object-fit        : cover;}
+      h4                               {
+         font-size   : 1.5rem;}} 
+   @media only screen and (min-width: 301px) {  /* Extra small devices (phones, 600px and down)                     */ 
+      .main       {                                  
+        
+         grid-template-columns   : 1fr 1fr;
+         grid-template-rows      : 200px 200px 200px 200px;
+         width                   : 100%;
+         height                  : 200px;
+         gap                     : 9px;}
+      .cards                                       {
+         position : relative;}
+      .cards img                                   {
+         width       : 100%;
+         height      : 100%; 
+         object-fit  : cover}
+      
+      h4                               {
+         font-size   : 1.3rem;}      }
+   @media only screen and (min-width: 601px) {  /* Small devices (portrait tablets and large phones, 600px and up)  */ 
+       .main                {                                  
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows   : 250px 250px 250px;
+         width                : 100%;
+         height               : 250px;
+         gap                  : 9px;}
+      .cards               {
+         position : relative;}
+      .cards img           {
+         width       : 100%;
+         height      : 100%; 
+         object-fit  : cover}
+      .nav                 {
+            max-height:none;
+            top: 0;
+            position: relative;
+            float: right;
+            width: -moz-fit-content;
+            width: fit-content;
+            background-color: transparent;  }
+      .menu li             {
+            float: left;         }
+      .menu a:hover        {
+            background-color: transparent;
+            color: #9dc352;         }
+      .hamb                {
+            display: none;}} 
+   @media only screen and (min-width: 768px) {  /* Medium devices (landscape tablets, 768px and up)                 */ 
+      .main                    {                                  
+         
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows   : 150px 150px;
+         width                : 100%;
+         height               : 150px;
+         gap                  : 5px;}
+      .cards                   {
+         position: relative;}
+      .cards img               {
+         width       : 100%;
+         height      : 100%; 
+         object-fit  : cover} }
+   @media only screen and (min-width: 992px) {  /* Large devices (laptops/desktops, 992px and up)                   */ 
+      .main   
+                      {                                  
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         grid-template-rows   : 150px 150px 150px;
+         width                : 100%;
+         height               : 150px;
+         gap                  : 5px;}
+      .cards                  {
+         position : relative;}
+      .cards img              {
+            width       : 100%;
+            height      : 100%; 
+            object-fit  : cover}         }
+   @media only screen and (min-width: 1200px){  /* Extra large devices (large laptops and desktops, 1200px and up)  */ 
+      .main                   {                                  
+         grid-template-columns   : 1fr 1fr 1fr 1fr 1fr 1fr;
+         grid-template-rows      : 150px 150px;
+         width                   : 100%;
+         height                  : 150px;
+         gap                     : 5px;}
+      .cards                  {
+         position : relative;}
+      .cards img              {
+            width       : 100%;
+            height      : 100%; 
+            object-fit  : cover}   } 
+   </style>
+</head>
+
+<body>
+   <div class="main-container">
+      <header class="header">
+         <a href="https://rdstl.github.io/" class="logo">roland distel <sup class="sup">generar +</sup></a>
+         <input type="checkbox" id="side-menu" class="side-menu" name="side-menu">
+         <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+         <nav class="nav" >
+            <ul class="menu" >
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Projects</a></li>
+               <li><a href="#">About</a></li>
+            </ul>
+         </nav>
+         
+      </header>
+      <section class="rdimg">
+         <img src="./img/RolandoDisteH280px.jpg" alt="rd">
+      </section>
+      <h2>Projects</h2>
+      <main class="main">
+         
+         <div class="cards card1">
+            <h4>metalwork</h4>
+            <a href="./projects/metalwork/index.html"><img src="./img/mtlwrk.jpg" alt="mtlwrk"></a> 
+         </div>
+         <div class="cards card2">
+            <h4>grupo unión</h4>
+            <a href="./projects/grupoUnion/index.html"><img src="./img/grupounion.jpg" alt="grupounion"></a>
+         </div>
+         <div class="cards card3">
+            <h4>auctions</h4>
+            <img src="./img/auctions.jpg" alt="auctions"> 
+         </div>
+         <div class="cards card4">
+            <h4>accounting</h4>
+            <img src="./img/accounting.jpg" alt="accounting">
+         </div>
+         <div class="cards card5">
+            <h4>trading</h4>
+            <img src="./img/trading.jpg" alt="trading">
+         </div>
+         <div class="cards card6">
+            <h4>amazing</h4>
+            <a href="./projects/amazing_events/index.html"><img src="./img/amazing.jpg" alt="amazing"></a>
+         </div>
+      </main>
+      <footer>
+         footer
+      </footer>
+   </div>
+</body>
+</html>
