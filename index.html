@@ -50,8 +50,14 @@
          position          : sticky;
          top               : 0;
          width             : 100%;     
-         padding-left: 5px;
+         padding-left      : 5px;
          height            : 75px; }
+   .rdimg                                     {
+      width    : 150px;
+      /* float    : right;  */
+      padding  : 10px;
+   }
+
    .logo                                        {
          display     : inline-block ;
          color       : var(--white);
@@ -109,6 +115,7 @@
    .side-menu:checked ~ .hamb .hamb-line::after {
          transform   : rotate(45deg) ;
          top         : 0;      }
+   
    .main                                        {
       display  : grid;
       /* overflow : hidden; */
@@ -234,6 +241,7 @@
             object-fit  : cover}   } 
    </style>
 </head>
+
 <body>
    <div class="main-container">
       <header class="header">
@@ -247,10 +255,14 @@
                <li><a href="#">About</a></li>
             </ul>
          </nav>
-
+         
       </header>
+      <section class="rdimg">
+         <img src="./img/RolandoDisteH280px.jpg" alt="rd">
+      </section>
+      <h2>Projects</h2>
       <main class="main">
-
+         
          <div class="cards card1">
             <h4>metalwork</h4>
             <a href="./projects/metalwork/index.html"><img src="./img/mtlwrk.jpg" alt="mtlwrk"></a> 

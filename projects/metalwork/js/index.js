@@ -1,6 +1,6 @@
-const apiUrl = 'https://mindhub-xj03.onrender.com/api/amazing';
-let data = null
-getApi();
+/*const apiUrl = 'https://mindhub-xj03.onrender.com/api/amazing';*/
+/*let data = null*/
+/*getApi();*/
 
 function getApi(){
   fetch(apiUrl)
