@@ -96,14 +96,12 @@ button::-moz-focus-inner,
    /* Remove the inner border and padding in Firefox. */
    border-style: none;
    padding: 0; }
- 
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring                        {
   /* Restore the focus styles unset by the previous rule. */
     outline: 1px dotted ButtonText; }
- 
 fieldset                                              {
    /* Correct the padding in Firefox. */
    padding: 0.35em 0.75em 0.625em; }

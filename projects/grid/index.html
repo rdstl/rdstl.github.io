@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>2 Basic</title>
+   <style>
+      *                                               {
+         font-family: 'Arial Narrow', Arial, sans-serif;
+      }
+      .main-container                                 {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 7fr;      }
+      .caja1                                          {
+         background-color: rgb(61, 61, 61);      
+         color: rgb(221, 222, 222);
+         font-size: large;
+         height: 65px;}
+      .caja2                                          {
+         height: 280px;      }
+      .caja3                                          {
+         height: 280px;      }
+      .caja4                                          {
+         height: 280px;      }     
+      .caja5                                          {
+         background-color: rgb(61, 61, 61);      
+         color: rgb(221, 222, 222);
+         font-size: large;
+         height: 325px;}
+      .menu-superior                                  {
+         display: flex;
+         justify-content: space-between;}
+      ul                                              {
+         text-decoration: none;         }
+
+   </style>
+</head>
+<body>
+   <main class="main-container">
+      <div class="cajas caja1" >primero
+         <ul class="menu-superior">
+            <li>abc</li>
+            <li>def</li>
+            <li>ghi</li>   
+         </ul>
+      </div>
+      <div class="cajas caja2" >segundo</div>
+      <div class="cajas caja3" >tercero</div>
+      <div class="cajas caja4" >cuarto</div>
+      <div class="cajas caja5" >quinto</div>
+   </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>gu</title>
+    <style>
+        /* Aquí puedes añadir tus estilos CSS */
+        #carousel       {
+            width    : 100%;
+            height   : 450px;
+            overflow : hidden;        }
+        .slide          {
+            display: none;
+            width: 100%;
+            height: 300px;        }
+        .slide.active   {
+            display: block;        }
+    </style>
+</head>
+<body>
+    <div id="carousel">
+        <!-- Aquí puedes añadir tus imágenes del carrusel -->
+        <div class="slide active"><img src="cienciaTecgnologiaYGobierno.png"></div>
+        <div class="slide"><img src="./diasDeSumision.png"></div>
+        <div class="slide"><img src="./elOrdenSensorial.png"></div>
+    </div>
+
+    <!-- Aquí puedes añadir el resto de tu contenido -->
+
+    <footer>
+        <!-- Aquí puedes añadir la información de la editorial -->
+    </footer>
+
+    <script>
+        // Aquí puedes añadir tu código JavaScript
+        var slides = document.querySelectorAll('#carousel .slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide, 3000); // Cambia de slide cada 3 segundos
+
+        function nextSlide() {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (currentSlide+1)%slides.length;
+            slides[currentSlide].className = 'slide active';
+                 }
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Amy Distel</title>
+   <style>
+      @import url(./css/styles.css);
+      
+      html, body, .main-container                     {
+         height: 100%;}
+      .main-container                                 {
+         display: flex;
+         flex-direction: column; }
+      .main                                           {
+         flex: 1;    
+         padding: 15px;}
+      .header                                         {
+         padding: 15px;
+         display: flex;
+         justify-content: space-between;      }
+      .footer                                         {
+         padding: 15px;      }
+      .header ul                                      {
+         list-style: none; 
+         display: flex;
+         justify-content: space-between;     } 
+      .header li>a                                    {
+         text-decoration: none;
+         padding: 15px;} 
+      .container                                      {
+         height: 100%;
+         text-align     : justify;
+         column-width   : 250px;
+         column-gap     : 23px;
+         margin-top: 25px;}
+      .container>p                                    {
+         margin-top: 10px;
+         margin-bottom: 20px;}
+      .container>h3                                   {
+         margin-top: 10px;}
+      .ph1, .ionferroso, .ionnitrato, .plumboso       {
+         width: 250px;
+         height: auto;
+         position: relative;
+         left: 12%;
+         padding: 25px;
+         border-radius: 3px; }   
+      .main ul                                        {
+         margin: 5px 0px 35px 25px;}
+   </style>
+</head>
+<body>
+   <div class="main-container">
+      <div class="header">
+         <h3><a class="amy" href="./index.html">Amy Distel</a></h3>
+         <nav class="nav">
+            <ul class="ul">
+               <li><a href="./myChemicalProject.html">mis proyectos</a></li>
+               <li><a href="./aboutMe.html">sobre mi</a></li>
+            </ul>
+         </nav>
+      </div>
+      <div class="main">
+         <h1>Cassette Reactivo</h1>
+         <h3>Prueba de Potabilidad de Agua</h3>
+         <div class="container">
+            <h3>Recursos y Procedimientos</h3>
+            <h4>Materiales</h4>
+            <ul>
+               <li>Vasos de Precipitado</li>
+               <li>Varilla de vidrio</li>
+               <li>Cuchara espátula analítica</li>
+               <li>Balanza de Mesada</li>
+               <li>Matraz aforado de 100,0 ml</li>
+               <li>Embudo</li>
+               <li>Pipetas Pasteur</li>
+               <li>Tubos de ensayo</li>
+               <li>Pipeta de 5,00 ml</li>
+               <li>Propipeta</li>
+               <li>Gradilla</li>
+               <li>Jeringa de 10,0 ml.</li>
+            </ul>
+            <h4>Reactivos</h4>
+            <ul>
+               <li>Nitrato de plomo (Pb(NO3)2).</li>
+               <li>Ioduro de potasio (KI).</li>
+               <li>Rojo fenol</li>
+               <li>Ortotolidina</li>
+               <li>Reactivo 1 AQUANAL®- Plus (Fe).</li>
+               <li>Agua destilada</li>
+            </ul>
+
+
+            <h4>Procedimiento</h4>
+            <h3>Determinación del pH</h3>
+            <p>En un tubo de ensayo se agrega 5,00 ml de agua de red. Después, se le agrega 4 gotas de indicador rojo fenol. Luego, se comparan los resultados con la tarjeta de colores.</p>
+
+            <img class="ph1" src="./img/ph1.jpg" alt="ph1">
+
+            <h3>Determinación del ión cloruro</h3>
+
+            <p>En un tubo de ensayo se agrega 5,00 ml de agua de red. Después, se le agrega 4 gotas del reactivo ortotolidina. Luego, se comparan los resultados con la tarjeta de colores. </p>
+
+            <h3>Determinación del ión ferroso</h3>
+            <p>Se agrega 10,0 ml de agua de red a un tubo de ensayo. Después, agregar 4 gotas de reactivo 1 AQUANAL®- Plus (Fe) y esperar 3 minutos para luego comparar con tarjeta de colores.</p>
+
+            <img class="ionferroso" src="./img/ionferroso.jpg" alt="ion ferroso">
+
+            <h3>Determinación del ión nitrato</h3>
+            <p>Se agrega 5,00 ml de agua de red a un tubo de ensayo. Después, agregar una micro cuchara-espátula rasa de reactivo, tapar y agitar intensamente por un minuto. Luego, esperar 5 minutos para luego comparar con tarjeta de colores.</p>
+            <img class="ionnitrato" src="./img/ionnitrato.jpg" alt="ionnitrato">
+
+            <h3>Determinación del ión plumboso</h3>
+            <p>Se prepara una solución 0,3 % m/v de ioduro de potasio (KI), otra solución de concentración 4,25% m/v y otra de 2,12% m/v. Asimismo realizamos una dilución de 1/100 de nitrato plumboso (Pb(NO3)2). </p>
+            <p>En un tubo de ensayo se colocan 5,00 ml de agua destilada y 2,00 ml de ioduro de potasio 0,3% m/v (tubo blanco).</p>
+            <p>En otros tres tubos se colocan 5,00 ml de agua destilada, 2,00 ml de las tres soluciones de ioduro de potasio y 2,00 ml de nitrato plumboso (tubos testigo).</p>
+            <p>Por último, se coloca en un tubo 5,00 ml de agua de red y 2,00 ml de ioduro de potasio 0,3% mv (tubo desconocido).</p>
+            <img class="plumboso" src="./img/plumboso.jpg" alt="plumboso">
+
+         </div>
+      </div>
+
+
+
+
+      <div class="footer">info</div>
+
+   </div>
+</body>
+</html>

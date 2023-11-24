@@ -6,67 +6,85 @@
    <link rel="stylesheet" href="css/normalize.css">
    <title>rd portfolio</title>
    <style>
-   *                                            { /* */ 
+   /*                                                                               main settings */   
+   *                                            {
       margin            : 0;
       padding           : 0;
       box-sizing        : border-box;
       font-family       : 'Arial Narrow', Arial, sans-serif;
       background-color  : #444444;
       color             : #d6d6dc;}
-   html, body, .main-container                  { /* */ 
-      height      : 100%;}
-   .main-container                              { /* */
-      display       : flex;
-      flex-direction: column;}
-   main                                         { /* */
-      flex-grow         : 1;
-      background-color  : #444444;
-      padding  : 20px; }
-   header                                       { /* */
-      background-color  : #444444;
-      color             : #d6d6dc;}
-   footer                                       { /**/
-      background-color: #6b9d06;}
-   header                                       { /* */
-      text-align  : left;}
-   .rdimg                                       {
-         width    : 90px;
-         position : absolute;
-         top      : 95px;
-         left     : 210px;      }
    :root                                        {
          --white        :#f9f9f9;
+         --white-       :#e5e5e5;
+         --white--      :#f5f7f4;
          --green        :#229395;
          --green-light  :#7acbcd;
          --black        :#36383f;
-         --grey         :#444444;      }
+         --grey         :#444444;
+         --grey2        :#c8c3bf; 
+         --grey3        :#bebfba;     }
+   html, body, .main-container                  {
+      height      : 100%;}
+   .main-container                              {
+      display              : grid;
+      grid-template-columns: 1fr;
+      grid-template-rows   : 1fr 2fr 5fr 1fr;} 
+   main                                         {
+      
+      background-color  : #444444;
+      padding           : 20px; } 
+   header                                       {
+      background-color  : --grey2;
+      color             : #d6d6dc;}
+   footer>p                                     {
+      background-color: #6b9d06;}
+   header                                       {
+      text-align  : left;}
+   /*                                                                               image and personal */
+   .rdimg                                       {
+      width    : auto;
+      display: inline;
+      
+      justify-content: center;
+      padding  : 10px;   
+      background-color: #bebfba;}
+   .rdimg>h3                                    {
+      float: right;
+      background-color: #bebfba;
+      font-weight: normal;
+      font-size: 1.5rem;
+      color: var(--white);
+      line-height: 110px;   }
+   /* .rdimg                                    {
+
+         width    : 90px;
+         position : absolute;
+         top      : 95px;
+         left     : 210px;      } */
    a                                            {
          text-decoration   : none;      }
    ul                                           {
          list-style  : none;      }
    .header                                      {
-         background-color  : var(--grey);
+         background-color  : var(--grey2);
          box-shadow        : 1px 1px 5px 0px var(--grey);
          position          : sticky;
          top               : 0;
          width             : 100%;     
          padding-left      : 5px;
          height            : 75px; }
-   .rdimg                                     {
-      width    : 150px;
-      /* float    : right;  */
-      padding  : 10px;
-   }
-
    .logo                                        {
-         display     : inline-block ;
-         color       : var(--white);
-         font-size   : 30px;
-         margin-left : 15px;
-         line-height : 75px;}
+      display     : inline-block ;
+      color       : var(--white);
+      font-size   : 39px;
+      margin-left : 15px;
+      line-height : 75px;}
    .sup                                         {
-      font-size: 15px;
-      color: orange;}
+      background-color  : var(--grey2);
+      font-size         : 21px;
+      font-style        : italic;
+      color             : #eb7201;}
    .nav                                         {
          width             : 100%;
          height            : 100%;
@@ -115,7 +133,6 @@
    .side-menu:checked ~ .hamb .hamb-line::after {
          transform   : rotate(45deg) ;
          top         : 0;      }
-   
    .main                                        {
       display  : grid;
       /* overflow : hidden; */
@@ -167,11 +184,10 @@
          width       : 100%;
          height      : 100%; 
          object-fit  : cover}
-      
-      h4                               {
+      h4                                           {
          font-size   : 1.3rem;}      }
    @media only screen and (min-width: 601px) {  /* Small devices (portrait tablets and large phones, 600px and up)  */ 
-       .main                {                                  
+      .main                {                                  
          grid-template-columns: 1fr 1fr 1fr;
          grid-template-rows   : 250px 250px 250px;
          width                : 100%;
@@ -200,7 +216,6 @@
             display: none;}} 
    @media only screen and (min-width: 768px) {  /* Medium devices (landscape tablets, 768px and up)                 */ 
       .main                    {                                  
-         
          grid-template-columns: 1fr 1fr 1fr;
          grid-template-rows   : 150px 150px;
          width                : 100%;
@@ -245,7 +260,7 @@
 <body>
    <div class="main-container">
       <header class="header">
-         <a href="https://rdstl.github.io/" class="logo">roland distel <sup class="sup">generar +</sup></a>
+         <a href="https://rdstl.github.io/" class="logo">roland distel <sup class="sup">experiences <strong class="sup">+</strong></sup></a>
          <input type="checkbox" id="side-menu" class="side-menu" name="side-menu">
          <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
          <nav class="nav" >
@@ -257,12 +272,15 @@
          </nav>
          
       </header>
+     
       <section class="rdimg">
-         <img src="./img/RolandoDisteH280px.jpg" alt="rd">
-      </section>
-      <h2>Projects</h2>
+         <img src="./img/RolandoDistel7100px.jpg" alt="rd">
+         <h3>"As a web developer, I aspire to create better, more engaging and innovative experiences."</h3>
+      </section> 
+
+      <h2 >Projects</h2>
       <main class="main">
-         
+        
          <div class="cards card1">
             <h4>metalwork</h4>
             <a href="./projects/metalwork/index.html"><img src="./img/mtlwrk.jpg" alt="mtlwrk"></a> 
@@ -287,9 +305,13 @@
             <h4>amazing</h4>
             <a href="./projects/amazing_events/index.html"><img src="./img/amazing.jpg" alt="amazing"></a>
          </div>
+         <div class="cards card7">
+            <h4>amazing</h4>
+            <a href="./projects/amyD/myChemicalProject.html"><img src="./img/chemical.jpg" alt="amy"></a>
+         </div>
       </main>
       <footer>
-         footer
+         <p>footer</p>
       </footer>
    </div>
 </body>

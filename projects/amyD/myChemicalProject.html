@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Amy Distel</title>
+   <style>
+   
+      @import url(./css/styles.css);
+      
+      html, body, .main-container                     {
+         height: 100%;}
+      .main-container                                 {
+         display        : flex;
+         flex-direction : column;}
+      .main                                           {
+         flex     : 1;    
+         padding  : 15px;}
+      .submain                                        {
+         display: flex;
+         margin: 15px;
+         /* background-image: url(./img/cassette.jpg); */}   
+      .header                                         {
+         padding        : 15px;
+         display        : flex;
+         justify-content: space-between;}
+      .footer                                         {
+         padding  : 15px;}
+      .header ul                                      {
+         list-style     : none; 
+         display        : flex;
+         justify-content: space-between;}
+      .header li>a                                    {
+         text-decoration: none;
+         padding        : 15px;}
+      .ul2                                            {
+         display: flex;
+         flex-direction: column;
+         margin: 25px;
+         list-style-type: none;}
+      .ul2 li a                                       {
+         background-color: rgb(37, 37, 123);
+         padding: 7px;
+         margin: 5px;
+         border-radius: 3px;
+         text-decoration: none;
+         font-size: 18px;}
+      .ul2 li                                         {
+         margin: 9px;}
+         .ul2 li a:hover                              {
+            background-color: rgb(57, 57, 218);
+         }
+
+         .cassette                                    {
+         width    : 25%;
+         height   : auto;
+         border-radius: 3px;}
+   
+   </style>
+</head>
+<body>
+   <div class="main-container">
+      <div class="header">
+         <h3><a class="amy" href="./index.html">Amy Distel</a></h3>
+         <nav class="nav">
+            <ul class="ul">
+               <li><a href="./myChemicalProject.html">mis proyectos</a></li>
+               <li><a href="./aboutMe.html">sobre mi</a></li>
+            </ul>
+         </nav>
+      </div>
+      <div class="main">
+         <h1>Cassette Reactivo</h1>
+         <h3>Prueba de Potabilidad de Agua</h3>
+        <!--  <h6>Desarrollado por Amy Distel</h6> -->
+        <div class="submain">
+         
+            <img class="cassette" src="./img/cassette.jpg" alt="imágen de cassette"> 
+            <nav class="nav">
+               <ul class="ul2">
+                  <li><a href="./abstract.html">Abstract</a></li>
+                  <li><a href="./objetivosFundamentacionTeorica.html">Objetivos y Fundamentación Teórica</a></li>
+                  <li><a href="./recursosProcedimiento.html">Recursos y Procedimiento</a></li>
+                  <li><a href="./conclusion.html">Conclusión</a></li>
+               </ul>
+            </nav> 
+         </div>
+      </div>
+      <div class="footer">info</div>
+
+   </div>
+</body>
+</html>
